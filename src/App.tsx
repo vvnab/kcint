@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.scss";
-import logo from "./logo.svg";
-import logoText from "./logo-text.png";
-import col1 from "./col-1.png";
-import col2 from "./col-2.png";
-import col3 from "./col-3.png";
+import logo from "./media/logo.svg";
+import logoText from "./media/logo-text.png";
+import col1 from "./media/col-1.png";
+import col2 from "./media/col-2.png";
+import col3 from "./media/col-3.png";
 
 const Header = () => (
   <section className="header">
