@@ -83,8 +83,19 @@ const Main = () => (
           </ul>
           <p>
             Полный перечень допустимых видов работ в области инженерных
-            изысканий представлен в <a target="_blank" href={"./sro.pdf"}>Приложении</a> к Свидетельству СРО. <a target="_blank" href={"./lic.pdf"}>Лицензия</a> на
-            вид деятельности. <a target="_blank" href={"./iso.pdf"}>Сертификаты</a> соответствия ISO 9001:2015.
+            изысканий представлен в{" "}
+            <a target="_blank" href={"./sro.pdf"}>
+              Приложении
+            </a>{" "}
+            к Свидетельству СРО.{" "}
+            <a target="_blank" href={"./lic.pdf"}>
+              Лицензия
+            </a>{" "}
+            на вид деятельности.{" "}
+            <a target="_blank" href={"./iso.pdf"}>
+              Сертификаты
+            </a>{" "}
+            соответствия ISO 9001:2015.
           </p>
         </div>
         <div className="col-xs-12 col-md-4">
@@ -152,11 +163,19 @@ const Footer = () => (
         <div className="col-xs-12 col-sm-6">
           <h4>Информация:</h4>
           <ul>
-            <li><a target="_blank" href={"./rekvizity.pdf"}>Реквизиты</a></li>
-            <li><a target="_blank" href={"./feedback.pdf"}>Отзывы</a></li>
+            <li>
+              <a target="_blank" href={"./rekvizity.pdf"}>
+                Реквизиты
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href={"./feedback.pdf"}>
+                Отзывы
+              </a>
+            </li>
           </ul>
-          167000, Республика Коми, г.Сыктывкар, <br /> ул. Первомайская 92, 4
-          этаж, офис&nbsp;406
+          167000, Республика Коми, г.Сыктывкар, <br />
+          ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
         </div>
         <div className="col-xs-12 copy">
           ООО "Кадастровый центр "Интеграция" {new Date().getFullYear()} &copy;
