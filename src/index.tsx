@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "flexboxgrid";
+import "flexboxgrid-helpers";
+import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -10,3 +12,13 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+const config = {
+  apiKey: "AIzaSyBwbzq38JJS-RNiBhaKRS8Xg7NWumfnEKM",
+  authDomain: "kcint-7328e.firebaseapp.com",
+  databaseURL: "https://kcint-7328e.firebaseio.com",
+  projectId: "kcint-7328e",
+  storageBucket: "kcint-7328e.appspot.com",
+  messagingSenderId: "702165886641"
+};
