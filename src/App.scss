@@ -9,10 +9,10 @@
 
   .bars {
     i {
-      font-size: 2.5rem;
+      font-size: 2rem;
       position: absolute;
-      top: 0.5rem;
-      right: 0.5rem;
+      top: 1rem;
+      right: 1rem;
     }
   }
 
@@ -32,6 +32,8 @@
     top: 75px;
     margin-left: auto;
     margin-right: auto;
+    height: 64px;
+    width: 217px;
   }
 
   .side-col {
@@ -63,6 +65,11 @@
           width: 8rem;
         }
       }
+
+      a:hover {
+        text-decoration: underline;
+        color: greenyellow;
+      }
     }
 
     .bottom {
@@ -85,14 +92,14 @@
   // border-bottom: 1px solid lighten($main-bg, 5);
   // margin-bottom: 3rem;
   color: $main-text;
+
   a {
     color: $hilighte;
     text-decoration: underline;
   }
 
-  h2,
-  h3,
-  h4 {
+  h1 {
+    font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
   }
@@ -100,6 +107,8 @@
   .colx {
     display: block;
     margin: 2rem auto;
+    height: 221px;
+    width: 220px;
   }
 
   li {
@@ -127,23 +136,28 @@
   background-color: $footer-bg;
   color: $footer-text;
   padding: 1rem 0;
+
   a {
     text-decoration: underline;
+
     &:hover {
       color: greenyellow;
     }
   }
+
   ul {
     li {
       line-height: 160%;
     }
   }
+
   // font-size: 0.9rem;
   .with-icon {
     i {
       padding: 0.5rem 1rem 0.5rem 0;
       font-size: 1.5rem;
     }
+
     justify-content: flex-start;
     align-items: center;
     display: flex;

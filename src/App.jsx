@@ -20,15 +20,16 @@ const Header = () => (
               </a>
             </div>
             <div className="bottom">
-              <div>Комплекс кадастровых работ</div>
-              <div>Закупочная деятельность</div>
-              <div>Геодезия</div>
+              Кадастровые&nbsp;работы
+              Закупочная&nbsp;деятельность
+              Геология Геодезия 
+              Гидрометеорология
             </div>
           </div>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <img src={logo} className="logo" />
-          <img src={logoText} className="logo-text" />
+          <img src={logoText} className="logo-text" alt="Кадастровый Центр ИНТЕГРАЦИЯ"/>
           <div className="bars hidden-lg hidden-md">
             <a href="#footer">
               <i className="fas fa-bars" />
@@ -51,8 +52,8 @@ const Header = () => (
             </div>
             <div className="bottom left">
               <div>
-                Оказание высококачественных услуг в установленные сроки на
-                территории Северо-Западного ФО
+                Качественные услуги в установленные сроки на
+                всей территории Российской&nbsp;Федерации
               </div>
             </div>
           </div>
@@ -68,7 +69,7 @@ const Main = () => (
       <div className="row between-xs">
         <div className="col-xs-12 col-md-4">
           <img src={col1} className="colx hidden-xs" />
-          <h3>Инженерные изыскания</h3>
+          <h1>Инженерные изыскания</h1>
           <ul>
             <li>
               Инженерно-геодезические изыскания, в том числе: создание опорных
@@ -100,7 +101,7 @@ const Main = () => (
         </div>
         <div className="col-xs-12 col-md-4">
           <img src={col2} className="colx hidden-xs" />
-          <h3>Комплекс кадастровых работ</h3>
+          <h1>Комплекс кадастровых работ</h1>
           <ul>
             <li>Составление и подготовка межевых планов и карта-планов.</li>
             <li>Подготовка технических планов объектов недвижимости.</li>
@@ -121,7 +122,7 @@ const Main = () => (
         </div>
         <div className="col-xs-12 col-md-4">
           <img src={col3} className="colx hidden-xs" />
-          <h3>Закупочная деятельность</h3>
+          <h1>Закупочная деятельность</h1>
           <p>
             Содействие в осуществлении закупочной деятельности государственными
             организациями и отдельными видами юридических лиц.
@@ -178,7 +179,7 @@ const Footer = () => (
           ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
         </div>
         <div className="col-xs-12 copy">
-          ООО "Кадастровый центр "Интеграция" {new Date().getFullYear()} &copy;
+          ООО "Кадастровый центр "Интеграция" &copy;&nbsp;{new Date().getFullYear()} 
         </div>
       </div>
     </div>
