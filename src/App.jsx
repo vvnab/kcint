@@ -6,6 +6,13 @@ import col1 from "./media/col-1.png";
 import col2 from "./media/col-2.png";
 import col3 from "./media/col-3.png";
 
+const Addr = () => {
+  return <React.Fragment>
+    167000, Республика Коми, г.&nbsp;Сыктывкар, <br />
+    ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
+  </React.Fragment>
+}
+
 const Header = () => (
   <section className="header">
     <div className="container-fluid">
@@ -15,21 +22,20 @@ const Header = () => (
             <div className="top">
               <i className="fas fa-map-marker-alt" />
               <a href="#map">
-                167000, Республика Коми, г.&nbsp;Сыктывкар,
-                ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
+                <Addr />
               </a>
             </div>
             <div className="bottom">
               Кадастровые&nbsp;работы
               Закупочная&nbsp;деятельность
-              Геология Геодезия 
+              Геология Геодезия
               Гидрометеорология
             </div>
           </div>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <img src={logo} className="logo" />
-          <img src={logoText} className="logo-text" alt="Кадастровый Центр ИНТЕГРАЦИЯ"/>
+          <img src={logoText} className="logo-text" alt="Кадастровый Центр ИНТЕГРАЦИЯ" />
           <div className="bars hidden-lg hidden-md">
             <a href="#footer">
               <i className="fas fa-bars" />
@@ -175,11 +181,10 @@ const Footer = () => (
               </a>
             </li>
           </ul>
-          167000, Республика Коми, г.&nbsp;Сыктывкар, <br />
-          ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
+          <Addr />
         </div>
         <div className="col-xs-12 copy">
-          ООО "Кадастровый центр "Интеграция" &copy;&nbsp;{new Date().getFullYear()} 
+          ООО "Кадастровый центр "Интеграция" &copy;&nbsp;{new Date().getFullYear()}
         </div>
       </div>
     </div>
