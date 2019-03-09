@@ -15,7 +15,7 @@ const Header = () => (
             <div className="top">
               <i className="fas fa-map-marker-alt" />
               <a href="#map">
-                167000, Республика Коми, г.Сыктывкар,
+                167000, Республика Коми, г.&nbsp;Сыктывкар,
                 ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
               </a>
             </div>
@@ -175,7 +175,7 @@ const Footer = () => (
               </a>
             </li>
           </ul>
-          167000, Республика Коми, г.Сыктывкар, <br />
+          167000, Республика Коми, г.&nbsp;Сыктывкар, <br />
           ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
         </div>
         <div className="col-xs-12 copy">
