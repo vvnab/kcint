@@ -186,3 +186,43 @@
     transform: rotate(360deg);
   }
 }
+
+.checksum-contaier {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h4, h5, h6 {
+    text-align: center;
+  }
+  .file-upload {
+    display: none;
+  }
+
+  .simple-label {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+    margin: 0 !important;
+    // display: inline !important;
+    // text-decoration: underline;
+    padding: 2rem 4rem;
+    background: lighten(#344855, 65%);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    &:hover {
+      background: lighten(#344855, 55%);
+    }
+  }
+
+  .files-list {
+    // font-weight: bold;
+    // width: 100%;
+    li {
+      padding: 0.25rem;
+      white-space: nowrap;
+    }
+  }
+}

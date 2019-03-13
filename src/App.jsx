@@ -1,4 +1,5 @@
 import React from "react";
+import MegaChecksum from "./MegaChecksum";
 import "./App.scss";
 import logo from "./media/logo.svg";
 import logoText from "./media/logo-text.png";
@@ -195,8 +196,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <Main />
-      <Map />
+      { document.location.hash === "#checksum" ?  <MegaChecksum /> : <React.Fragment><Main /><Map /></React.Fragment> }
       <Footer />
     </React.Fragment>
   );
