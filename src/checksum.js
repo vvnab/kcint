@@ -267,7 +267,7 @@ const parse = buffer => {
 const checksum = text => {
   const data = text.split("").map(i => i.charCodeAt(0)).map(i => DMap[i]);
   const result = data.reduce((s, i, k) => {
-    s += k % 2 == 0 ? i : i * 256;
+    s += k % 2 === 0 ? i : i * 256;
     s = s > 65535 ? s - 65536 : s;
     return s;
   }, 0);

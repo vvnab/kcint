@@ -7,7 +7,6 @@ const MegaChecksum = () => {
   const [files, setFiles] = useState([]);
   const [sums, setSums] = useState([]);
   useEffect(() => {
-    setSums([]);
     const sums = [];
     _.forEach(files, (f, k) => {
       const reader = new FileReader();

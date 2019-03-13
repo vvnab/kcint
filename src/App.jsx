@@ -35,7 +35,7 @@ const Header = () => (
           </div>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <img src={logo} className="logo" />
+          <img src={logo} alt="logo" className="logo" />
           <img src={logoText} className="logo-text" alt="Кадастровый Центр ИНТЕГРАЦИЯ" />
           <div className="bars hidden-lg hidden-md">
             <a href="#footer">
@@ -75,7 +75,7 @@ const Main = () => (
     <div className="container-fluid">
       <div className="row between-xs">
         <div className="col-xs-12 col-md-4">
-          <img src={col1} className="colx hidden-xs" />
+          <img src={col1} className="colx hidden-xs" alt="" />
           <h1>Инженерные изыскания</h1>
           <ul>
             <li>
@@ -92,22 +92,22 @@ const Main = () => (
           <p>
             Полный перечень допустимых видов работ в области инженерных
             изысканий представлен в{" "}
-            <a target="_blank" href={"./sro.pdf"}>
+            <a target="_blank" href={"./sro.pdf"} rel="noopener noreferrer">
               Приложении
             </a>{" "}
             к Свидетельству СРО.{" "}
-            <a target="_blank" href={"./lic.pdf"}>
+            <a target="_blank" href={"./lic.pdf"} rel="noopener noreferrer">
               Лицензия
             </a>{" "}
             на вид деятельности.{" "}
-            <a target="_blank" href={"./iso.pdf"}>
+            <a target="_blank" href={"./iso.pdf"} rel="noopener noreferrer">
               Сертификаты
             </a>{" "}
             соответствия ISO 9001:2015.
           </p>
         </div>
         <div className="col-xs-12 col-md-4">
-          <img src={col2} className="colx hidden-xs" />
+          <img src={col2} className="colx hidden-xs" alt="" />
           <h1>Комплекс кадастровых работ</h1>
           <ul>
             <li>Составление и подготовка межевых планов и карта-планов.</li>
@@ -128,7 +128,7 @@ const Main = () => (
           </ul>
         </div>
         <div className="col-xs-12 col-md-4">
-          <img src={col3} className="colx hidden-xs" />
+          <img src={col3} className="colx hidden-xs" alt="" />
           <h1>Закупочная деятельность</h1>
           <p>
             Содействие в осуществлении закупочной деятельности государственными
@@ -149,7 +149,7 @@ const Main = () => (
 
 const Map = () => (
   <section className="map" id="map">
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A79178478e1ef33fc8ccce48f929cbf01c0ef13d560e187328def1511e85ac7b3&amp;source=constructor" />
+    <iframe title="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A79178478e1ef33fc8ccce48f929cbf01c0ef13d560e187328def1511e85ac7b3&amp;source=constructor" />
   </section>
 );
 
@@ -172,12 +172,12 @@ const Footer = () => (
           <h4>Информация:</h4>
           <ul>
             <li>
-              <a target="_blank" href={"./rekvizity.pdf"}>
+              <a target="_blank" href={"./rekvizity.pdf"} rel="noopener noreferrer">
                 Реквизиты
               </a>
             </li>
             <li>
-              <a target="_blank" href={"./feedback.pdf"}>
+              <a target="_blank" href={"./feedback.pdf"} rel="noopener noreferrer">
                 Отзывы
               </a>
             </li>

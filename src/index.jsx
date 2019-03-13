@@ -14,7 +14,7 @@ render(<App />, document.getElementById('root'));
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-
+/*
 const config = {
   apiKey: "AIzaSyBwbzq38JJS-RNiBhaKRS8Xg7NWumfnEKM",
   authDomain: "kcint-7328e.firebaseapp.com",
@@ -23,3 +23,4 @@ const config = {
   storageBucket: "kcint-7328e.appspot.com",
   messagingSenderId: "702165886641"
 };
+*/
