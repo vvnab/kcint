@@ -1,4 +1,5 @@
 import React from "react";
+import { Switch, Route, Link } from "react-router-dom";
 import MegaChecksum from "./MegaChecksum";
 import "./App.scss";
 import logo from "./media/logo.svg";
@@ -8,11 +9,13 @@ import col2 from "./media/col-2.png";
 import col3 from "./media/col-3.png";
 
 const Addr = () => {
-  return <React.Fragment>
-    167000, Республика Коми, г.&nbsp;Сыктывкар, <br />
-    ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
-  </React.Fragment>
-}
+  return (
+    <React.Fragment>
+      167000, Республика Коми, г.&nbsp;Сыктывкар, <br />
+      ул.&nbsp;Первомайская&nbsp;92, 4&nbsp;этаж, офис&nbsp;406
+    </React.Fragment>
+  );
+};
 
 const Header = () => (
   <section className="header">
@@ -27,16 +30,20 @@ const Header = () => (
               </a>
             </div>
             <div className="bottom">
-              Кадастровые&nbsp;работы
-              Закупочная&nbsp;деятельность
-              Геология Геодезия
-              Гидрометеорология
+              Кадастровые&nbsp;работы Закупочная&nbsp;деятельность Геология
+              Геодезия Гидрометеорология
             </div>
           </div>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <img src={logo} alt="logo" className="logo" />
-          <img src={logoText} className="logo-text" alt="Кадастровый Центр ИНТЕГРАЦИЯ" />
+          <Link to="/">
+            <img
+              src={logoText}
+              className="logo-text"
+              alt="Кадастровый Центр ИНТЕГРАЦИЯ"
+            />
+          </Link>
           <div className="bars hidden-lg hidden-md">
             <a href="#footer">
               <i className="fas fa-bars" />
@@ -59,8 +66,8 @@ const Header = () => (
             </div>
             <div className="bottom left">
               <div>
-                Качественные услуги в установленные сроки на
-                всей территории Российской&nbsp;Федерации
+                Качественные услуги в установленные сроки на всей территории
+                Российской&nbsp;Федерации
               </div>
             </div>
           </div>
@@ -149,7 +156,10 @@ const Main = () => (
 
 const Map = () => (
   <section className="map" id="map">
-    <iframe title="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A79178478e1ef33fc8ccce48f929cbf01c0ef13d560e187328def1511e85ac7b3&amp;source=constructor" />
+    <iframe
+      title="map"
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A79178478e1ef33fc8ccce48f929cbf01c0ef13d560e187328def1511e85ac7b3&amp;source=constructor"
+    />
   </section>
 );
 
@@ -172,31 +182,53 @@ const Footer = () => (
           <h4>Информация:</h4>
           <ul>
             <li>
-              <a target="_blank" href={"./rekvizity.pdf"} rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href={"./rekvizity.pdf"}
+                rel="noopener noreferrer"
+              >
                 Реквизиты
               </a>
             </li>
             <li>
-              <a target="_blank" href={"./feedback.pdf"} rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href={"./feedback.pdf"}
+                rel="noopener noreferrer"
+              >
                 Отзывы
               </a>
+            </li>
+            <li>
+              <Link to="checksum">Калькулятор</Link>
             </li>
           </ul>
           <Addr />
         </div>
         <div className="col-xs-12 copy">
-          ООО "Кадастровый центр "Интеграция" &copy;&nbsp;{new Date().getFullYear()}
+          ООО "Кадастровый центр "Интеграция" &copy;&nbsp;
+          {new Date().getFullYear()}
         </div>
       </div>
     </div>
   </section>
 );
 
+const Root = () => (
+  <React.Fragment>
+    <Main />
+    <Map />
+  </React.Fragment>
+);
+
 const App = () => {
   return (
     <React.Fragment>
       <Header />
-      { document.location.hash === "#checksum" ?  <MegaChecksum /> : <React.Fragment><Main /><Map /></React.Fragment> }
+      <Switch>
+        <Route exact path="/" component={Root} />
+        <Route path="/checksum" component={MegaChecksum} />
+      </Switch>
       <Footer />
     </React.Fragment>
   );
