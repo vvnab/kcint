@@ -1,6 +1,6 @@
 import React from "react";
 // import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { render } from "react-snapshot";
 import "flexboxgrid";
 import "flexboxgrid-helpers";
@@ -9,9 +9,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 render(
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
 
