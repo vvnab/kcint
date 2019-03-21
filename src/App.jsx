@@ -226,8 +226,8 @@ const App = () => {
     <React.Fragment>
       <Header />
       <Switch>
-        <Route exact path="/" component={Root} />
         <Route path="/checksum" component={MegaChecksum} />
+        <Route path="/" component={Root} />
       </Switch>
       <Footer />
     </React.Fragment>
