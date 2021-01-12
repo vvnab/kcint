@@ -2,6 +2,7 @@
   "name": "kcint",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kcikomi.ru",
   "dependencies": {
     "@types/react-router-dom": "^4.3.1",
     "firebase": "^5.8.3",
