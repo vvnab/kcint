@@ -48,7 +48,7 @@
     }
 
     .top {
-      >div {
+      > div {
         width: 100%;
       }
 
@@ -120,6 +120,27 @@
     padding-right: 0.5rem;
     margin-left: -1.5rem;
     color: $hilighte;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .hidden {
+      display: none !important;
+    }
+
+    .hide {
+      display: block;
+      text-transform: uppercase;
+      margin: 0 1rem 0 2.5rem;
+      padding: 0.5rem 1rem;
+      border: 3px double #9e9c9c;
+      text-align: center;
+      font-weight: 500;
+      cursor: pointer;
+    }
   }
 }
 
@@ -193,7 +214,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     text-align: center;
   }
   .file-upload {
