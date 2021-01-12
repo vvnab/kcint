@@ -235,9 +235,9 @@ const Footer = () => (
                 Отзывы
               </a>
             </li>
-            <li>
+            {/* <li>
               <Link to="checksum">Калькулятор</Link>
-            </li>
+            </li> */}
           </ul>
           <Addr />
         </div>
