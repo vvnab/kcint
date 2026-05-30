@@ -1,0 +1,238 @@
+@import "./colors.css";
+
+.header {
+  color: var(--header-text);
+  background-image: url("./assets/header-bg.png");
+  background-position: center center;
+  min-height: 250px;
+}
+
+.header .bars i {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.header .logo {
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 190px;
+  margin: 10px auto 0;
+  animation: spin infinite 20s linear;
+}
+
+.header .logo-text {
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 64px;
+  width: 217px;
+}
+
+.header .side-col {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header .side-col i {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.header .side-col .top {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.header .side-col .top > div {
+  width: 100%;
+}
+
+.header .side-col .top .with-icon {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.header .side-col .top .with-icon a {
+  width: 8rem;
+}
+
+.header .side-col .top a:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+
+.header .side-col .bottom {
+  color: var(--main-text);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: right;
+  color: rgb(158, 156, 156);
+}
+
+.header .side-col .bottom.left {
+  text-align: left;
+}
+
+.main {
+  background: linear-gradient(to bottom, white, var(--main-bg));
+  padding: 2rem 0;
+  color: var(--main-text);
+}
+
+.main a {
+  color: var(--hilighte);
+  text-decoration: underline;
+}
+
+.main h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main .colx {
+  display: block;
+  margin: 2rem auto;
+  height: 221px;
+  width: 220px;
+}
+
+.main li {
+  list-style-type: none;
+}
+
+.main li:before {
+  content: "● ";
+  padding-right: 0.5rem;
+  margin-left: -1.5rem;
+  color: var(--hilighte);
+}
+
+.main .hide {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .main .hidden {
+    display: none !important;
+  }
+
+  .main .hide {
+    display: block;
+    text-transform: uppercase;
+    margin: 0 1rem 0 2.5rem;
+    padding: 0.5rem 1rem;
+    border: 3px double #9e9c9c;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.map iframe {
+  width: 100%;
+  height: 40vh;
+  border: none;
+  border-top: 1px solid white;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 1rem 0;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: greenyellow;
+}
+
+.footer ul li {
+  line-height: 160%;
+}
+
+.footer .with-icon {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.footer .with-icon i {
+  padding: 0.5rem 1rem 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.footer .with-icon a {
+  width: 8rem;
+}
+
+.footer .copy {
+  border-top: 1px solid lightgray;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.checksum-contaier {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.checksum-contaier h4,
+.checksum-contaier h5,
+.checksum-contaier h6 {
+  text-align: center;
+}
+
+.checksum-contaier .file-upload {
+  display: none;
+}
+
+.checksum-contaier .simple-label {
+  margin: 1rem;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  padding: 2rem 4rem;
+  background: #e8eef7;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.checksum-contaier .simple-label:hover {
+  background: #dce5f0;
+}
+
+.checksum-contaier .files-list li {
+  padding: 0.25rem;
+  white-space: nowrap;
+}
